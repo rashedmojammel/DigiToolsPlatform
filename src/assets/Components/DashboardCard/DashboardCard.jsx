@@ -4,7 +4,7 @@ import { CiPlay1 } from "react-icons/ci";
 import banner from '../../../assets/banner.png'
 const DashboardCard = () => {
     return (
-        <div className='flex items-center justify-between max-w-[1200px] mx-auto mt-15 gap-10'>
+        <div className='flex items-center justify-between max-w-[1200px] mx-auto  gap-10 my-15'>
 
             <div className='space-y-5 '>
                 <div className='bg-[#E1E7FF] rounded-2xl px-3 inline-block'>
