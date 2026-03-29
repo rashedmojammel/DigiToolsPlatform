@@ -6,7 +6,7 @@ import pack from '../../../assets/package.png';
 const GetStarted = () => {
     return (
         <div className='bg-[#F9FAFC]'>
-            <div className='text-center mt-10 space-y-5'>
+            <div className='text-center pt-10 space-y-5'>
                 <h1 className='text-5xl font-bold'>Get Started in 3 Steps</h1>
                 <p className='text-[#627382] mb-5'>Start using premium digital tools in minutes, not hours.</p>
             </div>
