@@ -1,16 +1,20 @@
-import React, { Suspense, useState } from 'react';
-import AvailableProd from './AvailableProd';
-import Cart from './Cart';
+import { Suspense, useState } from 'react'
+import AvailableProd from './AvailableProd'
+import Cart from './Cart'
 
-const fetchProducts = async () => {
-    const res = await fetch('/data.json');
-    return res.json();
-};
+const playerPromise = fetch('/data.json').then(r => r.json())
 
-const playerPromise = fetchProducts();
+const ProductSection = ({ cart, addToCart, removeFromCart, clearCart }) => {
+    const [active, setActive] = useState('products')
 
-const ProductSection = () => {
-    const [active, setActive] = useState('products');
+    const tab = (label, key) => (
+        <button
+            onClick={() => setActive(key)}
+            className={`px-6 py-2 rounded-full text-sm font-semibold transition ${active === key ? 'bg-purple-600 text-white' : 'text-gray-500'}`}
+        >
+            {label}
+        </button>
+    )
 
     return (
         <div>
@@ -20,37 +24,20 @@ const ProductSection = () => {
                     Choose from our curated collection of premium digital products designed <br />
                     to boost your productivity and creativity.
                 </p>
-                <div className='flex justify-center items-center gap-2'>
-                    <button
-                        onClick={() => setActive('products')}
-                        className={`px-6 py-2 rounded-full text-sm font-semibold transition ${
-                            active === 'products'
-                                ? 'bg-purple-600 text-white'
-                                : 'text-gray-500 hover:text-gray-800'
-                        }`}
-                    >
-                        Products
-                    </button>
-                    <button
-                        onClick={() => setActive('cart')}
-                        className={`px-6 py-2 rounded-full text-sm font-semibold transition ${
-                            active === 'cart'
-                                ? 'bg-purple-600 text-white'
-                                : 'text-gray-500 hover:text-gray-800'
-                        }`}
-                    >
-                        Cart (2)
-                    </button>
+                <div className='flex justify-center gap-2'>
+                    {tab('Products', 'products')}
+                    {tab(`Cart (${cart.length})`, 'cart')}
                 </div>
             </div>
+
             {active === 'products' && (
                 <Suspense fallback={<div className='text-center py-10'>Loading...</div>}>
-                    <AvailableProd playerPromise={playerPromise} />
+                    <AvailableProd playerPromise={playerPromise} cart={cart} addToCart={addToCart} />
                 </Suspense>
             )}
-            {active === 'cart' && <Cart />}
+            {active === 'cart' && <Cart cart={cart} removeFromCart={removeFromCart} clearCart={clearCart} />}
         </div>
-    );
-};
+    )
+}
 
-export default ProductSection;
+export default ProductSection

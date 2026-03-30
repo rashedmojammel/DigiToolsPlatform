@@ -7,9 +7,9 @@ const PricingCard = () => {
                 <h1 className='text-5xl font-bold'>Simple, Transparent Pricing</h1>
                 <p className='text-[#627382] mb-5'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='max-w-[1200px] mx-auto grid grid-cols-3'>
+            <div className='max-w-[1200px] mx-auto grid grid-cols-3 items-stretch'>
                 <div className="card w-96 bg-base-100 shadow-sm">
-  <div className="card-body">
+  <div className="card-body flex flex-col h-full">
     {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
     <div className="">
       <h2 className="text-3xl font-bold">Starter</h2>
@@ -34,14 +34,14 @@ const PricingCard = () => {
         <span>1 project per month</span>
       </li>
     </ul>
-    <div className="mt-6">
+   <div className="mt-auto">
       <button className="btn btn-primary btn-block text-white rounded-2xl border-none
     bg-gradient-to-r from-purple-600 to-indigo-500">Get Started Free</button>
     </div>
   </div>
 </div>
   <div className="card w-96  bg-gradient-to-r from-purple-600 to-indigo-500 shadow-sm text-white">
-  <div className="card-body">
+  <div className="card-body flex flex-col h-full">
     <div className='absolute -top-4 left-1/2 -translate-x-1/2'>
                         <span className='bg-[#FEF3C6] text-[#BB4D00] font-semibold px-4 py-1 rounded-full'>
                             Most Popular
@@ -78,7 +78,7 @@ const PricingCard = () => {
         <span>Advanced analytics</span>
       </li>
     </ul>
-    <div className="mt-6">
+    <div className="mt-auto">
       <button className='btn btn-block rounded-2xl bg-white hover:bg-white border-none'>
                         <span className='bg-gradient-to-r from-purple-600 to-indigo-500 bg-clip-text text-transparent font-semibold'>
                             Start Pro Trial
@@ -88,7 +88,7 @@ const PricingCard = () => {
   </div>
 </div>
   <div className="card w-96 bg-base-100 shadow-sm">
-  <div className="card-body">
+  <div className="card-body flex flex-col h-full">
     {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
     <div className="">
       <h2 className="text-3xl font-bold">Enterprise</h2>
