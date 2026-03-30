@@ -13,22 +13,18 @@ import { ToastContainer } from 'react-toastify'
 function App() {
   const [cart, setCart] = useState([])
 
-  const addToCart      = (item) => setCart(prev => prev.find(p => p.id === item.id) ? prev : [...prev, item])
-  const removeFromCart = (id)   => setCart(prev => prev.filter(p => p.id !== id))
-  const clearCart      = ()     => setCart([])
-
   return (
     <>
-      <Navbar cartCount={cart.length} />
+      <Navbar cart={cart} />
       <DashboardCard />
       <InforCard />
-      <ProductSection cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} />
+      <ProductSection cart={cart} setCart={setCart} />
       <GetStarted />
       <PricingCard />
       <CallToAction />
       <Footer />
 
-      <ToastContainer></ToastContainer>
+      <ToastContainer />
     </>
   )
 }
