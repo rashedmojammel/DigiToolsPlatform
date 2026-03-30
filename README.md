@@ -10,8 +10,31 @@
 DigiTools is a clean and responsive digital product store built with React.js and Tailwind CSS. Browse a curated catalog of AI-powered tools, add them to your cart, and manage your purchases — all from a beautifully designed single-page interface.
 
 ---
+<<<<<<< HEAD
 ## ✨ Features
 
+=======
+
+## 📸 Screenshots
+
+**Hero Section**
+![Hero]
+<img width="1568" height="708" alt="image" src="https://github.com/user-attachments/assets/97ab3f16-cd93-4c6a-b67a-aa1e97ffde9e" />
+**Product Catalog**
+<img width="1568" height="709" alt="image" src="https://github.com/user-attachments/assets/1a2d04f8-146e-41ad-ab68-a99ce83a4557" />
+**Shopping Cart**
+<img width="1568" height="682" alt="image" src="https://github.com/user-attachments/assets/a0d64f09-6f7d-4a72-97ec-9a281dccf0eb" />
+**Pricing Plans**
+<img width="1568" height="617" alt="image" src="https://github.com/user-attachments/assets/fa5cb2fe-91f9-44df-aceb-e060f944dea6" />
+**CTA & Footer**
+<img width="1568" height="708" alt="image" src="https://github.com/user-attachments/assets/f394a1d9-f17d-4e95-9077-a667ed31995c" />
+
+
+---
+
+## ✨ Features
+
+>>>>>>> f6d6be16efec0e6d0867ac3b598e12593c89c9ef
 ### 🛒 Smart Shopping Cart
 Add and remove products instantly with real-time cart count updates reflected in the navbar. State is managed directly in `App.jsx` and passed via props — no external state library needed.
 
@@ -69,4 +92,8 @@ src/
 └── main.jsx
 public/
 └── data.json
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> f6d6be16efec0e6d0867ac3b598e12593c89c9ef
