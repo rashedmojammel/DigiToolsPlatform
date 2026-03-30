@@ -1,0 +1,139 @@
+
+[
+  {
+    "id": "prod_001",
+    "name": "Starter Plan",
+    "description": "Perfect for individuals just getting started with basic tools and limited usage.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": [
+      "5 projects",
+      "Basic analytics",
+      "Email support",
+      "1 GB storage"
+    ],
+    "icon": "🌱"
+  },
+  {
+    "id": "prod_002",
+    "name": "Resume Builder Pro",
+    "description": "AI-powered resume builder with ATS optimization and professional templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter generator",
+      "Unlimited revisions"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": "prod_003",
+    "name": "Team Workspace",
+    "description": "Collaborative workspace for small teams with shared projects and real-time editing.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Up to 10 members",
+      "Shared projects",
+      "Real-time collaboration",
+      "Priority support",
+      "10 GB storage"
+    ],
+    "icon": "👥"
+  },
+  {
+    "id": "prod_004",
+    "name": "Analytics Dashboard",
+    "description": "Advanced analytics suite with custom reports, funnels, and data export capabilities.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Custom dashboards",
+      "Funnel analysis",
+      "CSV & API export",
+      "30-day data retention",
+      "Slack alerts"
+    ],
+    "icon": "📊"
+  },
+  {
+    "id": "prod_005",
+    "name": "Annual Growth Pack",
+    "description": "All-in-one annual plan packed with premium features at a significant discount.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": [
+      "Everything in Team",
+      "Unlimited projects",
+      "Advanced reporting",
+      "Dedicated account manager",
+      "Custom integrations"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": "prod_006",
+    "name": "Developer API Access",
+    "description": "Full API access for developers to integrate our platform into their own applications.",
+    "price": 79.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "10,000 API calls/day",
+      "Webhooks",
+      "SDKs for JS, Python, Go",
+      "Sandbox environment",
+      "99.9% uptime SLA"
+    ],
+    "icon": "⚙️"
+  },
+  {
+    "id": "prod_007",
+    "name": "Enterprise Suite",
+    "description": "Enterprise-grade security, compliance, and unlimited scale for large organizations.",
+    "price": 499.99,
+    "period": "monthly",
+    "tag": "Enterprise",
+    "tagType": "popular",
+    "features": [
+      "Unlimited users",
+      "SSO & SAML",
+      "SOC 2 compliance",
+      "Custom SLA",
+      "On-prem deployment option",
+      "24/7 phone support"
+    ],
+    "icon": "🏢"
+  },
+  {
+    "id": "prod_008",
+    "name": "Lifetime License",
+    "description": "One-time purchase for lifetime access to all current features — no subscriptions ever.",
+    "price": 299,
+    "period": "one-time",
+    "tag": "Limited Offer",
+    "tagType": "new",
+    "features": [
+      "All Pro features",
+      "Lifetime updates",
+      "Priority support",
+      "5 device activations",
+      "Offline mode"
+    ],
+    "icon": "♾️"
+  }
+]

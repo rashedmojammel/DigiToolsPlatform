@@ -43,9 +43,9 @@ const Footer = () => {
                     <div className='space-y-3'>
                         <h3 className='font-semibold'>Social Links</h3>
                         <div className='flex gap-3'>
-                            <button className='bg-gray-800 p-2 rounded-full'><BsYoutube className='w-4 h-4' /></button>
-                            <button className='bg-gray-800 p-2 rounded-full'><FaFacebook className='w-4 h-4' /></button>
-                            <button className='bg-gray-800 p-2 rounded-full'><BsTwitter className='w-4 h-4' /></button>
+                            <button className='bg-white p-2 rounded-full'><BsYoutube className='w-4 h-4 text-black' /></button>
+                            <button className='bg-white p-2 rounded-full'><FaFacebook className='w-4 h-4 text-black' /></button>
+                            <button className='bg-white p-2 rounded-full'><BsTwitter className='w-4 h-4 text-black' /></button>
                         </div>
                     </div>
 
