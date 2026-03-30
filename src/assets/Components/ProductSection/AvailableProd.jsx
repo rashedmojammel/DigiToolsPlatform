@@ -17,21 +17,18 @@ const ProductCard = ({ product, cart, setCart }) => {
       toast.error('Cart is full! Maximum 6 items allowed.')
       return
     }
-
     const isFound = cart.find(item => item.id === product.id)
-
     if (isFound) {
       toast.error(`${product.name} is already in cart!`)
       return
     }
-
     setIsAdded(true)
     setCart([...cart, product])
     toast.success(`${product.name} added to cart!`)
   }
 
   return (
-    <div className="card bg-base-100 w-96 shadow-sm p-4 relative" key={product.id}>
+    <div className="card bg-base-100 w-full shadow-sm p-4 relative" key={product.id}>
       <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full ${tagStyles[product.tagType] ?? 'bg-gray-100 text-gray-600'}`}>
         {product.tag}
       </span>
@@ -67,7 +64,7 @@ const AvailableProd = ({ playerPromise, cart, setCart }) => {
   const products = use(playerPromise)
 
   return (
-    <div className='max-w-[1200px] mx-auto grid grid-cols-3 gap-3 mb-10'>
+    <div className='max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10 px-4 md:px-0'>
       {products.map(product => (
         <ProductCard key={product.id} product={product} cart={cart} setCart={setCart} />
       ))}

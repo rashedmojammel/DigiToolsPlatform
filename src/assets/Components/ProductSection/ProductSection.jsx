@@ -10,7 +10,7 @@ const ProductSection = ({ cart, setCart }) => {
   const tab = (label, key) => (
     <button
       onClick={() => setActive(key)}
-      className={`px-6 py-2 rounded-full text-sm font-semibold transition ${active === key ? 'bg-purple-600 text-white' : 'text-gray-500'}`}
+      className={`px-5 md:px-6 py-2 rounded-full text-sm font-semibold transition ${active === key ? 'bg-purple-600 text-white' : 'text-gray-500'}`}
     >
       {label}
     </button>
@@ -18,10 +18,10 @@ const ProductSection = ({ cart, setCart }) => {
 
   return (
     <div>
-      <div className='text-center py-12 space-y-4'>
-        <h1 className='text-5xl font-bold'>Premium Digital Tools</h1>
+      <div className='text-center py-10 md:py-12 space-y-4 px-4'>
+        <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold'>Premium Digital Tools</h1>
         <p className='text-[#627382] text-sm'>
-          Choose from our curated collection of premium digital products designed <br />
+          Choose from our curated collection of premium digital products designed
           to boost your productivity and creativity.
         </p>
         <div className='flex justify-center gap-2'>
