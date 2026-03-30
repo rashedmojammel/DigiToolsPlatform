@@ -10,15 +10,16 @@ import Navbar from './assets/Components/NavBar/Navbar'
 import PricingCard from './assets/Components/PricingCard/PricingCard'
 import AvailableProd from './assets/Components/ProductSection/AvailableProd'
 import ProductSection from './assets/Components/ProductSection/ProductSection'
+import Cart from './assets/Components/ProductSection/Cart'
 
-const fetchProducts = async () => {
-  const res = await fetch('/data.json')
-  return res.json()
-}
+// const fetchProducts = async () => {
+//   const res = await fetch('/data.json')
+//   return res.json()
+// }
 
 function App() {
 
-  const playerPromise  = fetchProducts();
+  // const playerPromise  = fetchProducts();
   
 
   return (
@@ -27,7 +28,8 @@ function App() {
     <DashboardCard></DashboardCard>
     <InforCard></InforCard>
     <ProductSection></ProductSection>
-    <Suspense><AvailableProd playerPromise={playerPromise}></AvailableProd></Suspense>
+    {/* <Suspense><AvailableProd playerPromise={playerPromise}></AvailableProd></Suspense>
+    <Cart></Cart> */}
     
     <GetStarted></GetStarted>
     <PricingCard></PricingCard>
