@@ -1,8 +1,8 @@
 import React from 'react'
 
 const Navbar = ({ cart }) => (
-  <div className='max-w-[1200px] mx-auto'>
-    <div className="flex justify-between navbar bg-base-100 shadow-sm">
+  <div className="navbar bg-base-100 shadow-sm px-6">
+  <div className="max-w-[1200px] mx-auto w-full flex justify-between items-center">
       <a className="btn btn-ghost text-2xl font-bold text-[#4f39f6]">DigiTools</a>
 
       <ul className='flex space-x-6'>
