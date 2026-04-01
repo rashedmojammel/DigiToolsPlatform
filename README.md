@@ -13,8 +13,6 @@ DigiTools is a clean and responsive digital product store built with React.js an
 
 ## ✨ Features
 
-=======
-
 ## 📸 Screenshots
 
 **Hero Section**
@@ -94,5 +92,3 @@ public/
 <<<<<<< HEAD
 ```
 =======
-```
->>>>>>> f6d6be16efec0e6d0867ac3b598e12593c89c9ef
