@@ -7,7 +7,7 @@
 
 ## 📖 About
 
-DigiTools is a clean and responsive digital product store built with React.js and Tailwind CSS. Browse a curated catalog of AI-powered tools, add them to your cart, and manage your purchases — all from a beautifully designed single-page interface.
+DigiTools is a clean and responsive digital product store built with React.js and Tailwind CSS. Browse a curated catalog of AI-powered tools, add them to your cart, and manage your purchases — all from a beautifully designed single-page interface!
 
 ---
 
