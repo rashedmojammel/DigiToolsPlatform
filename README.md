@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🛠️ DigiTools</h1>
+  <h1>🛠️ DigiTools Platform</h1>
   <p>A modern digital marketplace to discover, purchase, and manage premium tools — all in one place.</p>
 </div>
 
